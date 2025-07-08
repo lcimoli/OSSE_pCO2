@@ -9,13 +9,16 @@ focussing on Observation System Simulation Experience (OSSE), based on the artic
 
 - Python 3
 
+NOTE: this code uses [Pytorch](https://pytorch.org/), which on some laptops is not compatible with python versions >3.12 (for example if you are running a Mac with intel processors). If the installation of pytorch fails, you will need to use a different version of python (more details below).
+
+
 The instructions below will install the necessary packages
 
 ## Getting started
 
 1. Clone this repository into a directory, e.g.
 
-      git clone https://github.com/AnnaDSMS/Cambridge-Summer-School-2024
+      git clone https://github.com/lcimoli/OSSE_pCO2.git
 
 2. Download the data set from:
 
@@ -29,13 +32,38 @@ files are alongside the notebook file.
        python -m venv venv
        source ./venv/bin/activate
        pip install -r requirements.txt
+       
+If you get an error about pytorch, you will need to use a different python version when creating the virtual environment. First check what versions are available with 
+	
+	ls /usr/local/bin/python*
+
+Then, pick a version previous to 3.13 (if available) and run
+	
+	/usr/local/bin/python3.XX -m venv .venv
+	source ./venv/bin/activate
+	pip install -r requirements.txt
+	
+If a previous version of python is not available, you will need to install it. The easiest way is probably to use pyenv, i.e.
+
+	brew install pyenv; pyenv install 3.12 . 
+	
+Alternatively, you can use conda to create an environment (this might take some time to setup):
+# first install miniforge https://conda-forge.org/download/
+# then create a new environment using 
+	conda create -n my-env "python==3.12"
+# then pip install inside of this
+
+
+
 
 From here you can load the notebook using your favourite mechanism. For example,
-using Jupyter notebook you can do:
+using Jupyter lab you can do:
 
-      jupyter notebook
+      jupyter-lab
 
 and then choose the `SOCAT_20082010_AtlOcean_ADS_05062024.ipynb` notebook.
+
+If you are using VScode, you can select the version of python when you create a virtual environment.
 
 
 ## Credits
