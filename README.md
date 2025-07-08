@@ -52,7 +52,9 @@ If a previous version of python is not available, you will need to install it. T
 Alternatively, you can use conda to create an environment (this might take some time to setup):
 1. first install miniforge https://conda-forge.org/download/
 2. then create a new environment using 
+
 	conda create -n my-env "python==3.12"
+
 3. then pip install inside of this
 
 
