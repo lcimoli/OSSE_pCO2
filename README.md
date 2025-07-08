@@ -42,16 +42,18 @@ Then, pick a version previous to 3.13 (if available) and run
 	/usr/local/bin/python3.XX -m venv .venv
 	source ./venv/bin/activate
 	pip install -r requirements.txt
+
+Where XX should be changed with your python version (e.g. python3.11).
 	
 If a previous version of python is not available, you will need to install it. The easiest way is probably to use pyenv, i.e.
 
 	brew install pyenv; pyenv install 3.12 . 
 	
 Alternatively, you can use conda to create an environment (this might take some time to setup):
-# first install miniforge https://conda-forge.org/download/
-# then create a new environment using 
+1. first install miniforge https://conda-forge.org/download/
+2. then create a new environment using 
 	conda create -n my-env "python==3.12"
-# then pip install inside of this
+3. then pip install inside of this
 
 
 
