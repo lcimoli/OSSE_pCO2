@@ -1,7 +1,8 @@
-numpy
+numpy<2.0 
 pandas
 matplotlib
 cartopy
 torch
 scikit-learn
 ipykernel
+jupyterlab
