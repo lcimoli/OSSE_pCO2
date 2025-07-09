@@ -35,7 +35,7 @@ files are alongside the notebook file.
        pip install -r requirements.txt
        
 <br/>
-3.1 If you get an error about pytorch, you will need to use a different python version when creating the virtual environment. First check what versions are available with 
+NOTE: If you get an error about pytorch, you will need to use a different python version when creating the virtual environment. First check what versions are available with 
 	
 	ls /usr/local/bin/python*
 
@@ -62,7 +62,7 @@ Alternatively, you can use conda to create an environment (this might take some 
 
 
 <br/>
-From here you can load the notebook using your favourite mechanism. For example,
+Once the requirements have been installed, you can load the notebook using your favourite mechanism. For example,
 using Jupyter lab you can do:
 
       jupyter-lab
