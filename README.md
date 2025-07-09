@@ -42,7 +42,7 @@ NOTE: If you get an error about pytorch, you will need to use a different python
 Then, pick a version previous to 3.13 (if available) and run
 	
 	/usr/local/bin/python3.XX -m venv .venv
-	source ./venv/bin/activate
+	source .venv/bin/activate
 	pip install -r requirements.txt
 
 Where XX should be changed with your python version (e.g. python3.11).
