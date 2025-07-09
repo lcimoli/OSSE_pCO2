@@ -30,7 +30,7 @@ files are alongside the notebook file.
 
 3. To setup the Notebook, we recommend running it in a virtual environment:
 
-       python3 -m venv venv
+       python3 -m venv .venv
        source .venv/bin/activate
        pip install -r requirements.txt
        
