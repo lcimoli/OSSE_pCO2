@@ -16,9 +16,10 @@ The instructions below will install the necessary packages
 
 ## Getting started
 
-1. Clone this repository into a directory, e.g.
-
-      git clone https://github.com/lcimoli/OSSE_pCO2.git
+1. Clone this repository into a directory
+```
+git clone https://github.com/lcimoli/OSSE_pCO2.git
+```
 
 2. Download the data set from:
 
